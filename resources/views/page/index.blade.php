@@ -1,25 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@extends('layout.main')
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Yeseva+One&display=swap" rel="stylesheet">
-    
-    <title>Rizma's</title>
-  </head>
-  <body>
-
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+@section('content')
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Rizma's</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,8 +91,8 @@
                         <div class="col-lg-4">
                             <div class="card h-100 text-center">
                                 <div class="card-body d-flex flex-column align-content-center ">
-                                    <h3 class="p-2 card-title h-25" style="text-align: center">-skills-</h3>
-                                    <div class="p-2 card-item h-75" id="skillCard">
+                                    <h3 class="card-title p-2 d-flex flex-column justify-content-start h-25" style="text-align: center">-skills-</h3>
+                                    <div class="card-item p-2 d-flex flex-column justify-content-center h-75" id="skillCard">
                                         <h5>html</h5>
                                         <h5>css</h5>
                                         <h5>bootstrap</h5>
@@ -145,11 +128,4 @@
             </div>
         </div>    
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-</html>
+@endsection
