@@ -24,7 +24,7 @@ html {
     font-size: 20px;
 }
 
-.wrapper, .wrapper2 {
+.wrapper, .wrapper2, .wrapper3 {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -40,6 +40,11 @@ html {
     min-height: 100%
 }
 
+.wrapper3 {
+    background-image: url('../img/contactMe.svg');
+    min-height: 100%;
+}
+
 /* .first {
     background-image: url('../img/bgnew.svg');
     min-height: 100%;
@@ -50,22 +55,23 @@ html {
     min-height: 100%
 } */
 
-.third {
+/* .third {
     background-image: url('../img/contactMe.svg');
     min-height: 100%;
-}
+} */
 
 .row {
     font-family: 'Coming Soon', cursive;
+    color: white;
 }
 
 .row-one {
     color: #DB2343;
 }
 
-.row h2 {
+.hey {
     font-size: 60px;
-    padding-top: 110px;
+    padding-top: 100px;
 }
 
 .row h1 {
@@ -77,26 +83,40 @@ html {
     padding-left: 60px;
 }
 
+.row-t {
+    padding-top: 0 !important;
+}
 .row-p {
     font-size: 25px;
 }
 
+#myPict {
+    width: 90%;
+}
+
 #aboutMe {
     padding-top: 600px;
-    z-index: 1;
+}
+
+#aboutMeTitle {
+    font-weight: 600; 
+    font-size:60px;
 }
 
 #clouds {
-    padding-top: -200px;
-    padding-bottom: 100px;
-    z-index: 1;
+    margin-top: -60px;
+    margin-bottom: 70px;
 }
 
 .card {
     color: white;
     background-image: linear-gradient(#189878, #7ADBC2) !important;
     height: 400px;
-    border-radius: 25px;
+    border-radius: 25px !important;
+}
+
+.rounded {
+    border-radius: 1rem !important;
 }
 
 .middle {
@@ -119,19 +139,96 @@ html {
     width: 50%
 }
 
-#skillCard {
-    justify-self: center;
+#contactMe {
+    padding-top: 305px;
+    padding-bottom: 50px;
 }
 
+#contactMeTitle {
+    font-size:60px; 
+    text-align:center; 
+    font-weight:bold; 
+    transform: rotate(-31.07deg); 
+    padding-left: 170px; 
+    letter-spacing: 20px; position:relative;
+}
 
-/* @media(max-width:568px) {
+.contact-icon {
+    width: 70%;
+}
+
+.contact-info {
+    color: white !important;
+    font-weight: 500;
+}
+
+.contact-row {
+    padding-top: 74px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px)  {
     #aboutMe {
-        padding-top: 200px;
+        padding-top: 700px;
+    }
+
+    #myPict {
+        margin-bottom: 100px;
+        width: 80%;    
+    }
+    .row-white {
+        padding-left: 0px;
+        text-align: center;
+    }
+    #aboutMeTitle {
+        font-size: 40px;
+        text-align: center;
+    }
+    .clouds {
+         margin-top: 30px;
+         margin-bottom: 30px;
+    }
+    .card-col{
+        padding-bottom: 20px;
     }
 }
 
-@media (max-width: 768px) { 
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 767.98px) and (max-width: 991.98px) {
     #aboutMe {
+        padding-top: 800px;
+    }
+
+    #myPict {
+        margin-bottom: 100px; 
+        width: 80%;       
+    }
+    .row-white {
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .clouds {
+         margin-top: 30px;
+         margin-bottom: 30px;
+    }
+    .card-col{
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    #contactMe {
         padding-top: 500px;
+        padding-bottom: 30px;
     }
-} */
+    #contactMeTitle {
+        font-size:60px; 
+        text-align:center;
+        font-weight:bold; 
+        letter-spacing: 20px; 
+        position:relative;
+        transform: rotate(0deg); 
+        padding-left: 0px;
+    }
+}
